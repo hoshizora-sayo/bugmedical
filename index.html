@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+<title>Bug Medical</title>
+<style>
+.collapsible {
+  background-color: #777;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: segoe-ui;
+}
+
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #111;
+  color:white;
+}
+.copy {
+  width: 50px;
+  height: 40px;
+  background-color: #355e9f;
+  color: white;
+  border-radius: 10px;
+  box-shadow: grey;
+        }
+.topbutton {
+  width: 250px;
+  height: 40px;
+  background-color: #355e9f;
+  color: white;
+  border-radius: 10px;
+  box-shadow: grey;
+        }
+</style>
+</head>
+<body style="background-color:black;">
+<h1 style="background-color:powderblue;text-align:center">the ss14 quick medical reference guide by buglordx aka hoshizora aka Joey Hotdogs/Cottonballs aka Willow Bim</h1>
+<center><a href="chems.html"><button class="topbutton"><b>CLICK HERE FOR CHEM GUIDE</b></button></a><a href="cryo.html"><button class="topbutton"><b>CLICK HERE FOR CRYO GUIDE</b></button></a></center>
+<h1 style="color:white;text-align:center">a quick reference guide for properly treating people in space station 14<br>this assumes you already know the absolute basics of the game, such as damage thresholds for life/death/crit, how to scan people and how to use topicals/chemicals/medical beds but doesn't go into anything insanely advanced</h1>
+<h1 style="background-color:#FFAA00;text-align:center">BRUTE DAMAGE<br><u>⚠ Never inject a patient with any 2 different brute medicines, it will create razorium inside them and hurt them ⚠</u></h1>
+<h2 style="color:white;"><u> General Damage:</u><br><img src="meds/brutepack.png">Bruise Packs (5 blunt, 5 piercing, 5 slash)<br><img src="meds/gauze.png"> Gauze (10 piercing, 5 slash, stops bleeding)<br><img src="meds/medicated-suture.png">Medicated Sutures (10 blunt, 10 piercing, 10 slash)<br><img src="meds/bic.png">Bicaridine - 5u (heals 6.66 blunt 6.66 slash and 6.66 piercing over 10 seconds) OD = 15u</h2>
+<h2 style="color:white;"><u> Blunt Damage:</u><br><img src="meds/bruiz.png">Bruizine - 5u (heals 35 blunt over 10 seconds) OD = 10.5u</h2>
+<h2 style="color:white;"><u> Slash Damage:</u><br><img src="meds/lace.png">Lacerinol - 5u (heals 30 slash over 10 seconds) OD = 12u</h2>
+<h2 style="color:white;"><u> Pierce Damage:</u><br><img src="meds/punc.png">Puncturase - 5u (heals 40 pierce over 10 seconds) OD = 11u</h2>
+<h1 style="background-color:#3A1D8A;color:white;text-align:center">TOXIN DAMAGE<br>There is no general cure or topical for both types of toxin damage, they must be treated with chemicals individually</h1>
+<h2 style="color:white;"><u> Poison Damage:</u><br><img src="meds/dylo.png">Dylovene - 5u (heals 10 poison damage over 10 seconds) OD = 20u<br>AND/OR<br><img src="meds/diph.png">Diphenhydramine - 5u (heals 30 poison damage over 10 seconds) No OD but is a somewhat advanced chemical, so chem isn't guaranteed to make it for you</h2>
+<h2 style="color:white;"><u> Radiation Damage:</u><br><img src="meds/arithpyra.png">Arithrazine - 5u (heals 30 radiation and deals 15 brute over 10 seconds) No OD but the brute damage is no longer exactly negligible and should be treated with some bicaridine afterwards or during, depending on total damage.<h2>
+<h1 style="background-color:#aa4308;text-align:center">BURN DAMAGE<br>Includes Heat, Shock, Cold, and Caustic</h1>
+<h2 style="color:white;"><u> General Damage:</u><br><img src="meds/ointment.png">Ointment (5 heat, 5 shock, 5 cold, 1.5 caustic)<br><img src="meds/regenerative-mesh.png">Regenerative Mesh (10 heat, 10 shock, 10 cold, 10 caustic)<br><img src="meds/derma.png">Dermaline - 5u (heals 15 heat, 15 shock, 15 cold over 10 seconds) OD = 10u (DOES NOT HEAL ANY CAUSTIC)</h2>
+<h2 style="color:white;"><u> Heat Damage:</u><br><img src="meds/arithpyra.png">Pyrazine - 5u (heals 50 heat over 50 seconds) OD = 20u<br>BE SURE TO CHECK BODY TEMP WITH HEALTH ANALYZER. If body temp is over 50C shove them in cryo without medicine to cool them off</h2>
+<h2 style="color:white;"><u> Shock Damage:</u><br><img src="meds/insuzine.png">Insuzine - 5u (heals 40 shock over 20 seconds) OD = 12u</h2>
+<h2 style="color:white;"><u> Cold Damage:</u><br><img src="meds/lepo.png">Leporazine - 5u (heals 40 cold over 10 seconds) No OD</h2>
+<h2 style="color:white;"><u> Caustic Damage:</u><br><img src="meds/sigy.png">Sigynate - 5u (heals 30 caustic over 10 seconds) OD = 16u<br><img src="meds/sider.png">Siderlac - 5u (heals 50 caustic over 10 seconds) No OD, but needs botany to coordinate with chem which won't always happen</h2>
+<h1 style="color:white;background-color:darkblue;text-align:center">AIRLOSS DAMAGE<br>Includes both bloodloss and asphyxiation, both damage types are taken care of by one medicine</h1>
+<h2 style="color:white;"><u> General Damage:</u><br><img src="meds/dex.png">Dexalin plus - 5u (heals 65 asphyxiation and 65 bloodloss over 10 seconds) OD = 25u</h2>
+<h2 style="color:white;"><u> Bloodloss Damage:</u><br>BE SURE TO STOP BLEEDING WITH GAUZE FIRST<br>Bloodloss damage is caused by having a blood level under 90%, which is listed near the top of the scanner window, dexalin does NOT heal blood level<br><img src="meds/bloodpack.png">Blood Pack (heals 5% blood level)<br><img src="meds/saline.png">Saline - 5u (heals 20% blood level over 10 seconds) No OD</h2>
+<h1 style="background-color:#c8ff75;text-align:center">GENETIC DAMAGE<br>Currently a rare form of damage with only one treatment outside of cryogenics</h1>
+<h2 style="color:white;"><u> Cellular Damage:</u><br><img src="meds/phalanx.png">Phalanximine - 5u (heals 15 cellular damage and deals 7.5 radiation damage and 7.5 caustic damage over 50 seconds, 11u OD and cannot be mixed with arithrazine) Recently heavily nerfed, as it now has harsh side effects and works very slow, the cryogenic chemical Doxarubixadone should be used instead, explained on the cryogenics page. Can be used in an absolute emergency but is unlikely.</h2>
+
+<center><h1 style="background-color:powderblue;">Pro Tips for Pro Moths</h1></center>
+
+<h2 style="color:white;background-color:blue;">-	<u>DO NOT USE THE HYPOSPRAY TO APPLY AMBUZOL (NORMAL), 10U MUST BE INJECTED ALL AT ONCE TO CURE ZOMBIE INFECTION</u>
+
+<h2 style="color:white;">-	<u>USE CRYOGENICS</u>
+<h3 style="color:white;"> USE IT!!!!!! CHECK THE GUIDE ITS SO GOOD PLEASE USE IT!!!<br>It is especially good for when someone takes a damage type early on that you do not have chems for yet, like caustic damage or radiation damage (all stations start with cryoxadone roundstart)<br>Damage from explosions is 3 different types of damage!! Perfect for cryo!! Put em in the tube!!<br>Save topicals early on!! Use the fucking cryo!! Check the guide if you don't know how!!
+
+<h2 style="color:white;">-	<u>Anchor down your medibot and actively use it</u></h2>
+<h3 style="color:white;"> Medibots inject 30u of Tricordrazine into alive targets under 50 total damage and 15u of Inaprovaline into crit targets, which reduces bleeding and airloss damage.<br>THEY HAVE UNLIMITED MEDICINE and a single medibot can keep a single crit person stable indefinitely<br>Tricordrazine doesn't work very fast so using it to heal someone at around 50 damage takes a long time but someone is under 30 total damage or so and doesn't have any caustic/genetic/radiation damage just drag them to the medibot and you shouldn't have to use any topicals or chemicals whatsoever<br><img src="meds/medibot.png"><br>Anchor it with a wrench (which can fit into a medibelt) to make sure it doesn't escape. If the AI bugs out and it doesn't want to inject, it's probably trying to path to someone else so unanchor it and don't forget to reanchor once its done</h3>
+
+<h2 style="color:white;">-	<u>Ask for the handheld crew monitor (Paramedic)</u></h2>
+<h3 style="color:white;"> This item spawns in the CMO's locker, and can be used to see the health state of everyone in the station with suit sensors on.<br> The CMO is usually more concerned with the state of medbay rather than the state of the crew, so they should be fine with handing it over to you<br><br>Do be aware it is a steal target for traitors, so don't be surprised if you get mugged, whether you actually have it or not<br><img src="meds/monitor.png"></h3>
+
+<h2 style="color:white;">-	<u>Make a mini chem reserve in your inventory</u>
+<h3 style="color:white;"> Most medbays will have a box of bottles somewhere, which hold 30u each and only take up a 1x1 in your inventory, while also fitting into the medical belt<br>These are great for paramedic, allowing them to take chems on the go, or even just medical doctors anticipating a large influx of patients coming in with a certain damage type.<br><img src="meds/medicbelt.png">
+
+<h2 style="color:white;">-  <u>Right click the hypospray to toggle container draw (CMO)</u></h2>
+<h3 style="color:white;"> By toggling this option you can draw from containers like a syringe while holding the hypospray in your hand, 5u at a time, and it will also always inject on bodies.<br>If you right click the chem jug stack then left click, the dropdown will disappear and you'll have to right click again, so its better for when you're making a quick mix or just need 5u of something.<br><img src="meds/hypospray.png"></h3>
+
+<h2 style="color:white;">-  <u>Use epinepherine!!</u>
+<h3 style="color:white;"> Epinepherine is an extremely good chemical for crit people, not only keeping them alive but also healing a multitude of damage types. AND you get plenty of it for free<br>Just look at it!! It heals all brutes, all burns, lots of airloss, and poison. It ODs at 20u so be careful, but certainly give 5-10u to any patient depending on how far into crit they are <br><img src="meds/epi.png">
+
+<h2 style="color:white;">-	<u>Go for a space walk with cryoxadone, no internals needed!</u>
+<h3 style="color:white;"> Cryoxadone works when your body temperature is low, and heals all spaceing damage at an incredibly high rate, including airloss.<br>In an absolute disaster, snag some cryox and escape outside and inject/drink it when you get low on health, cryox is so effective that you can restore health even while taking space damage!!<br><u><i>DISCLAIMER: Bug Medical is not responsible for any meteor/space debris related deaths</u></i>
+
+</html>

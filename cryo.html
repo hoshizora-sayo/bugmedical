@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+<title>Bug Medical Cryo</title>
+<style>
+.collapsible {
+  background-color: #777;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: segoe-ui;
+}
+
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #111;
+  color:white;
+}
+.copy {
+  width: 50px;
+  height: 40px;
+  background-color: #355e9f;
+  color: white;
+  border-radius: 10px;
+  box-shadow: grey;
+        }
+.topbutton {
+  width: 250px;
+  height: 40px;
+  background-color: #355e9f;
+  color: white;
+  border-radius: 10px;
+  box-shadow: grey;
+        }
+</style>
+</head>
+<body style="background-color:black;">
+<h1 style="background-color:powderblue;text-align:center">the ss14 beginner cryogenics guide by buglordx aka hoshizora aka Joey Hotdogs/Cottonballs aka Willow Bim</h1>
+<center><a href="index.html"><button class="topbutton"><b>CLICK HERE FOR MEDICAL GUIDE</b></button></a><a href="chems.html"><button class="topbutton"><b>CLICK HERE FOR CHEM GUIDE</b></button></a></center>
+<h1 style="color:white;background-color:darkblue;text-align:center">CRYOGENICS GUIDE<br>It's easier than you think and very powerful</h1>
+<center><h1 style="color:white;">SETUP EXAMPLE - MARATHON STATION</h1></center>
+
+<h2 style="color:white;"> Step 1: Acquire tools. Get a gas analyzer, t-ray scanner, and anything else you need to sort out your medbay<br>Step 2: Wait for atmos to set up distro (shoudn't take long)<br>Step 3: 
+Use gas analyzer on gas pump facing into the cryo network and make sure the inlet is turned on and distro is working. Should look like this before you turn on the pump.<br><img src="Step3.png"><br>
+Step 4: Turn on gas pump in, set freezer to 100K, and gas filter to filter Carbon Dioxide. The UI on each instrument should look like the following<br>
+Gas pump in<br>
+<img src="gaspumpin.png"><br>
+Freezer to 100k<br>
+<img src="freezer.png"><br>
+Gas filter to filter Carbon Dioxide<br>
+<img src="gasfilter.png"><br>
+Marathon layout:<br>
+<img src="setup.png"><br>
+Step 5: Use gas analyzer on the pods to check if everything is good. Should look like this:<br>
+<img src="gaspod.png"><br>
+✅ Pressure around 100kPa<br>
+✅ Temperature around 100k<br>
+✅ 79% nitrogen 21% oxygen split or something close to that<br>
+<center>Notes</center><br>
+- If you treat a lot of slime people in cryo, make sure to briefly set the gas filter to Nitrous Oxide in order to get it out of the system.<br>
+- The stations Cog and Core have another gas pump that must be turned that comes off the gas filter in order to pump the waste into the waste distro<br>
+- Oasis station reroutes cryo waste into an empty canister, unsure if it ever gets full but it's worth it to monitor your cryo pods throughout the shift just to make sure.
+<center><h1 style="color:white;">USING CRYOGENICS</h1></center>
+<h2 style="color:white;"> Prerequisites to cryo:<br>- Cryogenic chemicals (Some cryoxadone starts on every station)<br>- Patient is not bleeding, has at least 80% blood level, and is not dead. Bring them to at least 170-180 damage before defibrillation<br>- Patient is not wearing any outerclothing such as a coat, hardsuit, etc. 
+jumpsuit can be taken off too optionally if you're a freak like that<br>- Cryogenics works A LOT better on people with multiple damage types rather than a single damage type, so choose your patients wisely<br><br>
+ACTUAL PROCESS OF HEALING:<br>
+Step 1: Drag patient into the cryopod<br>
+Step 2: Left click pod to see their current health, and wait until their internal temperature approaches 213k (150k for Opporozidone), at which point you can left click the pod while holding a beaker of cryogenic chemical to insert it<br>
+Step 3: Wait for their total damage to get out of crit or down to around 30 and take them out so you don't waste too much chems<br>
+Step 4: Give them their clothing back, put them in a bed near a space heater and/or medibot to heal the remaining damage. Giving them a scarf or winter jacket also helps warm them up again. Leporazine can be used for lizards in extreme cases to heat them up again.<br>
+<center><h2 style="color:white;">CRYOGENIC CHEMICALS</center></h2>
+<h2 style="background-color:#0091ff;">Cryoxadone <br>・The default cryogenic chemical, as well as the easiest to make. Heals all damage types except Genetic very effectively. Patients must be alive</h2>
+<h2 style="background-color:#89f77f;">Aloxadone <br>・A special cryogenic chemical that requires aloe from botany to be made. Heals Heat, Cold, Shock, and Caustic to a lesser rate but does work on dead bodies. <br>・Helpful for people who have died to overheated atmosphere or left in space, but can require a LOT of medicine to actually recover some victims.<br> ・100u will heal about 800 heat, cold and shock damage, but many burn or spaced victims can often have over 1000 damage due to the way body temperature inflicts damage on dead bodies past death.</h2>
+<h2 style="background-color:#86a5bd;">Necrosol <br>・A very powerful cryogenic chemical that heals Brute, Burn, and Poison damage in dead bodies. The only way to save bodies with over 195 poison damage.<br>・<u>This chemical requires omnizine.</u> Do not expect chemistry to be able to make it at all unless they are cooperating very closely with botany.<br>・Necrosol does not work with radiation damage, if someone has 195 radiation damage or more, they are permadead.<br>・If you manage to kill one of those nasty revenants, the ectoplasm they leave behind can be grinded into 25u necrosol.
+<h2 style="background-color:#b5e36d;">Opporozidone <br>・Requires both carpotoxin and herbs from botany to be made, but can bring most rotted bodies back to life.<br>・Before using or requesting Opporozidone, check the amount of cellular damage the body has. If it is 195 or higher, <u>they are permadead.</u><br>・However in the case that they don't have excessive genetic damage, the best way to cure this cellular damage after the rotting has been reversed can be done with the next chemical.
+<h2 style="background-color:#32cd32;">Doxarubixadone <br>・A cryogenic chemical that heals only cellular damage. Patients must be alive<br>・Cellular damage is currently rather rare but can show up from time to time, usually when slimes attack. Also starts to build up in very rotted bodies.<br>・Phalanximine has recently been heavily nerfed, and with this chemical being extremely easy to make, should be used for any genetic damage on anyone.<br>・When bringing back a very rotted body it may be worth it to cryo them with this chemical first right after they are defibbed.
+
+
+
+
+</html>

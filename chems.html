@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+<title>Bug Medical Chems</title>
+<style>
+.collapsible {
+  background-color: #777;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: segoe-ui;
+}
+
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #111;
+  color:white;
+}
+.copy {
+  width: 50px;
+  height: 40px;
+  background-color: #355e9f;
+  color: white;
+  border-radius: 10px;
+  box-shadow: grey;
+        }
+.topbutton {
+  width: 250px;
+  height: 40px;
+  background-color: #355e9f;
+  color: white;
+  border-radius: 10px;
+  box-shadow: grey;
+        }
+</style>
+</head>
+<body style="background-color:black;">
+<h1 style="background-color:orange;text-align:center">the ss14 quick chem start guide by buglordx aka hoshizora aka Joey Hotdogs/Cottonballs aka Willow Bim</h1>
+<center><a href="index.html"><button class="topbutton"><b>CLICK HERE FOR MEDICAL GUIDE</b></button></a><a href="cryo.html"><button class="topbutton"><b>CLICK HERE FOR CRYO GUIDE</b></button></a></center>
+<h2 style="color:white;text-align:center">easy exact mixes for different chemicals you might be asked to make, no more fumbling with ratios! <br> most recipes are to be made multiple times in order to fill up one 200u jug<br>i started this site for personal use as a beginner chemist in ss14, this is by no means the quickest and most efficient way of doing things but will help you learn the ratios and get all the chems done without the CMO having to hop in and do it themselves</h2>
+<center><h1 style="color:white;">THE EASY STUFF<br>(ROUNDSTART CHEM DISPENSER ONLY TURBO MODE, YOU SHOULD MAKE ALL OF THESE WITHOUT BEING ASKED) </h1></center>
+
+<button class="collapsible active" id="derma" style="background-color:#215263;color:black">Derma - burns 10u OD (5u = 15 heat/shock/cold)</button>
+<div class="content">
+<h2 style="color:white;">dermaline - 90 (IN ORDER)</h2>
+<p style="color:white;">15 silicon <br>15 carbon<br>30 oxygen<br>30 phosphorus</p>
+<button class="copy" onclick="copyText('derma')"><img id="dermaa" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible active" id="bic" style="background-color:#FFAA00;">Bic - brute 15u OD (5u = 15 blunt/pierce/slash)</button>
+<div class="content">
+<h2 style="color:white;">Bicaridine - 90 (IN ORDER)</h2>
+<p style="color:white;">15 oxygen <br>15 sugar<br>15 carbon<br>20 carbon<br>25 carbon</p>
+<button class="copy" onclick="copyText('bic')"><img id="bicc" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible active" id="dylo" style="background-color:#3A1D8A;color:white">Dylo - poison 20u OD (5u = 10 poison)</button>
+<div class="content">
+<h2 style="color:white;">dylovene - 90</h2>
+<p style="color:white;">30 potassium<br>30 silicon<br>30 nitrogen</p>
+<button class="copy" onclick="copyText('dylo')"><img id="dyloo" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible active" id="arith" style="background-color:orange;color:black">Arith - rads, does brute no OD (5u = 30 rads)</button>
+<div class="content">
+<h2 style="color:white;">hyronalin - 90 (in order, then pour into jug)</h2>
+<p style="color:white;">15 potassium<br>15 silicon<br>15 nitrogen<br>20 radium<br>25 radium</p>
+<h2 style="color:white;">arithrazine - 180</h2>
+<p style="color:white;">90 hyronalin (already in jug)<br>90 hydrogen (pour into jug)</p>
+<button class="copy" onclick="copyText('arith')"><img id="arithh" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible active" id="sal" style="background-color:#0064C8;color:white">Saline - blood level no OD (5u = 20% blood)</button>
+<div class="content">
+<h2 style="color:white;">Saline - 100</h2>
+<p style="color:white;">80 water<br>20 table salt</p>
+<button class="copy" onclick="copyText('sal')"><img id="sall" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible active" id="dex" style="background-color:#4DA0BD;">Dex plus - airloss 25u OD (5u = 65 airloss)</button>
+<div class="content">
+<h2 style="color:white;">dexalin - 30</h2>
+<p style="color:white;">20 oxygen <br>1 plasma (does not consume, remove in chemmaster)</p>
+<h2 style="color:white;">dexaplus - 90</h2>
+<p style="color:white;">30 dexalin<br>30 carbon<br>30 iron</p>
+<button class="copy" onclick="copyText('dex')"><img id="dexx" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<center><h1 style="color:white;">A BIT MORE ADVANCED<br>(CHEMMASTER NECESSARY)</h1></center>
+
+<button class="collapsible" id="bru" style="background-color:#ff3636;">Bruiz - blunt 10.5 OD (5u = 35 blunt)</button>
+<div class="content">
+<h2 style="color:white;">inaprovaline - 45</h2>
+<p style="color:white;">15 oxygen <br>15 sugar<br>15 carbon</p>
+<h2 style="color:white;">Bicaridine - 90</h2>
+<p style="color:white;">45 inaprovaline<br>45 carbon</p>
+<h2 style="color:white;">bruizine - 50 (MIX EVENLY)</h2>
+<p style="color:white;">25 bic (exact) <br>25 sugar (exact) <br>25 lithium (exact) <br> remove lithium in chemmaster after mixing!!</p>
+<button class="copy" onclick="copyText('bru')"><img id="bruu" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="lac" style="background-color:#252936;color:white">Lace - slash 12u OD (5u = 30 slash)</button>
+<div class="content">
+<h2 style="color:white;">inaprovaline - 45</h2>
+<p style="color:white;">15 oxygen <br>15 sugar<br>15 carbon</p>
+<h2 style="color:white;">Bicaridine - 90</h2>
+<p style="color:white;">45 inaprovaline<br>45 carbon</p>
+<h2 style="color:white;">benzene - 50 (hot plate)</h2>
+<p style="color:white;">50 hydrogen<br>50 carbon</p>
+<h2 style="color:white;">lacerinol - 100 (MIX BIC AND BENZENE EVENLY)</h2>
+<p style="color:white;">50 bic (exact) <br>50 benzene (exact)</p>
+<button class="copy" onclick="copyText('lac')"><img id="lacc" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="pun" style="background-color:#f5f0ba;color:black">Punc - pierce 11u OD (5u = 40 pierce)</button>
+<div class="content">
+<h2 style="color:white;">inaprovaline - 45</h2>
+<p style="color:white;">15 oxygen <br>15 sugar<br>15 carbon</p>
+<h2 style="color:white;">Bicaridine - 90</h2>
+<p style="color:white;">45 inaprovaline<br>45 carbon</p>
+<h2 style="color:white;">hydroxide - 100 (hot plate)</h2>
+<p style="color:white;">50 hydrogen<br>50 oxygen</p>
+<h2 style="color:white;">puncturase - 100 (MIX BIC AND HYDROXIDE EVENLY, may need to put on hotplate for a few seconds again)</h2>
+<p style="color:white;">50 bic (exact) <br>50 hydroxide (exact) </p>
+<button class="copy" onclick="copyText('pun')"><img id="punn" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="lep" style="background-color:#ff7db5;">Lepo - cold/low body temp no OD (5u = 40 cold)</button>
+<div class="content">
+<h2 style="color:white;">fersilicate - 100 (hot plate, put into chemmaster)</h2>
+<p style="color:white;">50 silicon <br>50 iron</p>
+<h2 style="color:white;">leporazine - 98 (remember to remove extra fersilicate in chemmaster)</h2>
+<p style="color:white;">50 ferscilicate <br>49 copper<br>1 plasma (not consumed, remember to remove)</p>
+<button class="copy" onclick="copyText('lep')"><img id="lepp" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="ins" style="background-color:#6f3da1;">Insuz - shock 12u OD (5u = 40 shock)</button>
+<div class="content">
+<h2 style="color:white;">kelotane - 60 (put into chemmaster)</h2>
+<p style="color:white;">30 silicon <br>30 carbon</p>
+<h2 style="color:white;">leporazine - 60 (also put into chemmaster)</h2>
+<h3 style="color:white;">fersilicate - 30 (hot plate)</h3>
+<p style="color:white;">15 silicon <br>15 iron</p>
+<h3 style="color:white;">leporazine - 60</h3>
+<p style="color:white;">30 ferscilicate <br>30 copper<br>1 plasma (not consumed, remember to remove)</p>
+<h2 style="color:white;">insuzine - 90 (hot plate, needs to be very hot)</h2>
+<p style="color:white;">30 silicon <br>30 leporazine<br> 30 kelotane</p>
+<button class="copy" onclick="copyText('ins')"><img id="inss" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="pyr" style="background-color:#aa4308;">Pyra - heat 20u OD (5u = 50 heat) WORKS SLOWLY</button>
+<div class="content">
+<h2 style="color:white;">leporazine - 60</h2>
+<h3 style="color:white;">fersilicate - 30 (hot plate)</h3>
+<p style="color:white;">15 silicon <br>15 iron</p>
+<h3 style="color:white;">leporazine - 60</h3>
+<p style="color:white;">30 ferscilicate <br>30 copper<br>1 plasma (not consumed, remember to remove)</p>
+<h2 style="color:white;">dermaline - 60</h2>
+<h3 style="color:white;">kelotane - 20</h3>
+<p style="color:white;">10 silicon <br>10 carbon</p>
+<h3 style="color:white;">dermaline - 60</h3>
+<p style="color:white;">20 kelotane <br>20 oxygen<br>20 phosphorus</p>
+<h2 style="color:white;">pyrazine - 90 (hot plate, has to be pretty hot)</h2>
+<p style="color:white;">30 leporazine <br>30 dermaline<br>30 carbon</p>
+<button class="copy" onclick="copyText('pyr')"><img id="pyrr" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="sig" style="background-color:#e0a5b9;">Sigy - caustic 16u OD (5u = 30 caustic)</button>
+<div class="content">
+<h2 style="color:white;">sodium hydroxide - 40</h2>
+<h3 style="color:white;">hydroxide - 20 (hot plate)</h3>
+<p style="color:white;">10 oxygen <br>10 hydrogen</p>
+<h3 style="color:white;">sodium hydroxide - 40</h3>
+<p style="color:white;">20 sodium <br>20 hydroxide</p>
+<h2 style="color:white;">sodium carbonate - 40</h2>
+<h3 style="color:white;">ammonia - 12 </h3>
+<p style="color:white;">9 hyrdogen <br>3 nitrogen</p>
+<h3 style="color:white;">sodium carbonate - 40 </h3>
+<p style="color:white;">10 ammonia <br>10 table salt<br>10 carbon<br>10 oxygen</p>
+<h2 style="color:white;">kelotane - 40</h2>
+<p style="color:white;">20 silicon <br>20 carbon</p>
+<h2 style="color:white;">sigynate - 80 (hot plate)</h2>
+<p style="color:white;">20 sodium hydroxide <br>20 sodium carbonate<br>20 kelotane<br>20 sugar <br>20 water</p>
+<button class="copy" onclick="copyText('sig')"><img id="sigg" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="dip" style="background-color:#64ffe6;color:black">Diph - poison no OD (5u = 30 poison)</button>
+<div class="content">
+<h2 style="color:white;">oil - 75</h2>
+<p style="color:white;">25 hydrogen<br>25 carbon<br>25 welding fuel</p>
+<h2 style="color:white;">diethlyamine - 80 </h2>
+<p style="color:white;">30 hydrogen<br>10 nitrogen<br>40 ethanol</p>
+<h2 style="color:white;"> diphenhydramine - 60 (hot plate)</h2>
+<p> 20 diethlyamine<br>20 oil<br>20 table salt<br>20 carbon<br>20 ethanol</p>
+<button class="copy" onclick="copyText('dip')"><img id="dipp" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<center><h1 style="color:white;">SITUATIONAL</h1></center>
+
+<button class="collapsible" id="mut" style="background-color:#00ff5f;">Unstable Mutagen (only if botany asks, tell em to bring a bucket)</button>
+<div class="content">
+<h2 style="color:white;">unstable mutagen - 90 (IN ORDER)</h2>
+<p style="color:white;">30 radium<br>30 phosphorus<br>30 chlorine</p>
+<button class="copy" onclick="copyText('mut')"><img id="mutt" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="tric" style="background-color:#00E5FF;">Trico - minor healing no OD</button>
+<div class="content">
+<h2 style="color:white;">trico - 90 (IN ORDER)</h2>
+<p style="color:white;">15 carbon<br>15 oxygen<br>15 sugar<br>15 nitrogen <br>15 potassium<br>15 silicon<br> usually only ever used if the medibot goes AWOL</p>
+<button class="copy" onclick="copyText('tric')"><img id="tricc" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="phal" style="background-color:#c8ff75;color:black">Phalanximine - cellular does rads and caustic</button>
+<div class="content">
+<h2 style="color:white;">hyronalin - 60 (in order)</h2>
+<p style="color:white;">10 potassium<br>10 silicon<br>10 nitrogen<br>30 radium</p>
+<h2 style="color:white;">unstable mutagen - 60</h2>
+<p style="color:white;">20 radium<br>20 phosphorus<br>20 chlorine</p>
+<h2>phalanximine - 90</h2>
+<p>30 hyronalin<br>30 ethanol<br>30 unstable mutagen<br>was heavily nerfed, only make if botany requests, otherwise make doxarubixadone for actual cellular damage</p>
+<button class="copy" onclick="copyText('phal')"><img id="phall" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="cry" style="background-color:#0091ff;">Cryoxadone - cryo</button>
+<div class="content">
+<h2 style="color:white;">dexalin - 30</h2>
+<p style="color:white;">20 oxygen <br>1 plasma (does not consume, remove in chemmaster)</p>
+<h2 style="color:white;">cryoxadone - 90</h2>
+<p style="color:white;">30 dexalin<br>30 water<br>30 oxygen</p>
+<button class="copy" onclick="copyText('cry')"><img id="cryy" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="alo" style="background-color:#89f77f;">Aloxadone - cryo burned dead bodies</button>
+<div class="content">
+<h2 style="color:white;">fersilicate - 100 (hot plate, put into chemmaster)</h2>
+<p style="color:white;">50 silicon <br>50 iron</p>
+<h2 style="color:white;">leporazine - 98 (remember to remove extra fersilicate in chemmaster)</h2>
+<p style="color:white;">50 ferscilicate <br>49 copper<br>1 plasma (not consumed, remember to remove)</p>
+<h2 style="color:white;">dexalin - 30</h2>
+<p style="color:white;">20 oxygen <br>1 plasma (does not consume, remove in chemmaster)</p>
+<h2 style="color:white;">cryoxadone - 90</h2>
+<p style="color:white;">30 dexalin<br>30 water<br>30 oxygen</p>
+<h2 style="color:white;">aloxadone - 80</h2>
+<p style="color:white;">20 aloe (from botany, grinded)<br>40 leporazine<br>40 cryoxadone</p>
+<button class="copy" onclick="copyText('alo')"><img id="aloo" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="dox" style="background-color:#32cd32;">Doxarubixadone - cryo genetic damage</button>
+<div class="content">
+<h2 style="color:white;">cryoxadone - 90</h2>
+<h3 style="color:white;">dexalin - 30</h3>
+<p style="color:white;">20 oxygen <br>1 plasma (does not consume, remove in chemmaster)</p>
+<h3 style="color:white;">cryoxadone - 90</h3>
+<p style="color:white;">30 dexalin<br>30 water<br>30 oxygen</p>
+<h2 style="color:white;">unstable mutagen - 90</h2>
+<p style="color:white;">30 radium<br>30 phosphorus<br>30 chlorine</p>
+<h2 style="color:white;">doxarubixadone - 90</h2>
+<p style="color:white;">45 cryoxadone<br>45 unstable mutagen</p>
+<button class="copy" onclick="copyText('dox')"><img id="doxx" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+
+
+<button class="collapsible" id="opp" style="background-color:#b5e36d;">Opporozidone - cryo heals rotting</button>
+<div class="content">
+<h2 style="color:white;">oil - 75</h2>
+<p style="color:white;">25 hydrogen<br>25 carbon<br>25 welding fuel</p>
+<h2 style="color:white;">acetone - 60</h2>
+<p style="color:white;">30 oil <br>30 welding fuel<br>30 oxygen</p>
+<h2 style="color:white;">siderlac - 100, realistically just make as much as you need since both ingredients come from botany anyways</h2>
+<p style="color:white;">50 aloe <br>50 stellibinin (galaxy thistle)</p>
+<h2 style="color:white;">cognizine - 90</h2>
+<p style="color:white;">30 acetone<br>30 siderlac<br>30 carpotoxin (from salvage or botany making koibeans)</p>
+<h2 style="color:white;">cryoxadone - 90</h2>
+<h3 style="color:white;">dexalin - 30</h3>
+<p style="color:white;">20 oxygen <br>1 plasma (does not consume, remove in chemmaster)</p>
+<h3 style="color:white;">cryoxadone - 90</h3>
+<p style="color:white;">30 dexalin<br>30 water<br>30 oxygen</p>
+<h2 style="color:white;">unstable mutagen - 90</h2>
+<p style="color:white;">30 radium<br>30 phosphorus<br>30 chlorine</p>
+<h2 style="color:white;">doxarubixadone - 90</h2>
+<p style="color:white;">45 cryoxadone<br>45 unstable mutagen</p>
+<h2 style="color:white;">opporozidone - 75 (hot plate)</h2>
+<p style="color:white;">50 plasma (CONSUMES PLASMA)<br>25 cognizine<br>25 doxarubixadone</p>
+<button class="copy" onclick="copyText('opp')"><img id="oppp" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+
+
+
+<button class="collapsible" id="nec" style="background-color:#86a5bd;">Necrosol - cryo poison/frozen dead bodies</button>
+<div class="content">
+<h2 style="color:white;">cryoxadone - 90</h2>
+<h3 style="color:white;">dexalin - 30</h3>
+<p style="color:white;">20 oxygen <br>1 plasma (does not consume, remove in chemmaster)</p>
+<h3 style="color:white;">cryoxadone - 90</h3>
+<p style="color:white;">30 dexalin<br>30 water<br>30 oxygen</p>
+<h2>Necrosol - 30 (hot plate)</h2>
+<p>15 omnizine (not craftable, must get from botany or other source)<br>30 cryoxadone<br>45 blood</p>
+<button class="copy" onclick="copyText('nec')"><img id="necc" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<center><h1 style="color:white;">ADVANCED TREATMENT<br>You'll need to work with botany and have access to a microwave for these</h1></center>
+<button class="collapsible" id="sut" style="background-color:#6f3da1;">Medicated Suture - better bruise packs </button>
+<div class="content">
+<h2 style="color:white;">cryptobiolin+tranexamic acid quick mix - 90 (IN THIS ORDER)</h2>
+<p style="color:white;">15 potassium<br>30 oxygen<br>35 sugar<br>5 hydrogen <br>5 sulfur<br>5 carbon</p>
+<h2 style="color:white;">medicated sutures - 2 stacks (put all into microwave, 20 seconds) </h2>
+<p style="color:white;">quick mix beaker (5 of each chem will be leftover)<br>2 cloth (break a small beaker and use the glass shard to butcher an extra jumpsuit from chemdrobe)<br>2 poppy flowers(from botany) <br>bruise pack with at least 2 items left in the stack</p>
+</div>
+
+<button class="collapsible" id="reg" style="background-color:#4DA0BD;">Regenerative Mesh - better ointment</button>
+<div class="content">
+<h2 style="color:white;">Sigynate - caustic 16u OD</h2>
+<h2 style="color:white;">sodium hydroxide - 40</h2>
+<h3 style="color:white;">hydroxide - 20 (hot plate)</h3>
+<p style="color:white;">10 oxygen <br>10 hydrogen</p>
+<h3 style="color:white;">sodium hydroxide - 40</h3>
+<p style="color:white;">20 sodium <br>20 hydroxide</p>
+<h2 style="color:white;">sodium carbonate - 40</h2>
+<h3 style="color:white;">ammonia - 12 </h3>
+<p style="color:white;">9 hyrdogen <br>3 nitrogen</p>
+<h3 style="color:white;">sodium carbonate - 40 </h3>
+<p style="color:white;">10 ammonia <br>10 table salt<br>10 carbon<br>10 oxygen</p>
+<h2 style="color:white;">kelotane - 40</h2>
+<p style="color:white;">20 silicon <br>20 carbon</p>
+<h2 style="color:white;">sigynate - 80 (hot plate)</h2>
+<p style="color:white;">20 sodium hydroxide <br>20 sodium carbonate<br>20 kelotane<br>20 sugar <br>20 water</p>
+<h2 style="color:white;">dermaline - 90 (IN ORDER)</h2>
+<p style="color:white;">15 silicon <br>15 carbon<br>30 oxygen<br>30 phosphorus</p>
+<p style="color:white;">40 derma+40 sig in one beaker<br>2 cloth (break a small beaker and use the glass shard to butcher an extra jumpsuit from chemdrobe)<br>2 aloe leaves(from botany) <br>ointment with at least 2 items left in the stack</p>
+</div>
+
+<center><h1 style="color:white;">RANDOM CIVILIAN DRUGS</h1></center>
+<button class="collapsible" id="ocu" style="background-color:#2e2b27;color:white">Oculine (blindness)</button>
+<div class="content">
+<h2 style="color:white;">hydroxide - 10 (hot plate)</h2>
+<p style="color:white;">10 hydrogen<br>10 oxygen</p>
+<h2 style="color:white;">oculine - 20 </h2>
+<p style="color:white;">10 hydroxide<br>5 table salt<br>5 blood</p>
+<button class="copy" onclick="copyText('ocu')"><img id="ocuu" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="ethy" style="background-color:#0e4000;color:white">Ethylredoxrazine (drunkness)</button>
+<div class="content">
+<h2 style="color:white;">dylovene - 15</h2>
+<p style="color:white;">5 potassium<br>5 silicon<br>5 nitrogen</p>
+<h2 style="color:white;">Ethylredoxrazine - 45</h2>
+<p style="color:white;">15 dylovene<br>15 oxygen<br>15 carbon</p>
+<button class="copy" onclick="copyText('ethy')"><img id="ethyy" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="fluro" style="background-color:#9e6b38;color:black">Fluorosurfactant (makes foam when added to water)</button>
+<div class="content">
+<h2 style="color:white;">sulfuric acid - 15</h2>
+<p style="color:white;">5 hydrogen<br>10 oxygen<br>5 sulfur</p>
+<h2 style="color:white;">fluorosurfactant - 75 </h2>
+<p style="color:white;">30 carbon<br>30 fluorine<br>15 sulfuric acid</p>
+</div>
+
+<button class="collapsible" id="mef" style="background-color:#b0abaa;color:black">METH!!!(desoxyephedrine)</button>
+<div class="content">
+<h2 style="color:white;">oil - 75</h2>
+<p style="color:white;">25 hydrogen<br>25 carbon<br>25 welding fuel</p>
+<h2 style="color:white;">diethlyamine - 80 </h2>
+<p style="color:white;">30 hydrogen<br>10 nitrogen<br>40 ethanol</p>
+<h2 style="color:white;">ephedrine - 100</h2>
+<p style="color:white;">25 hydrogen<br>25 sugar<br>25 diethlyamine<br>25 oil</p>
+<h2 style="color:white;">meth!! (desoxyephedrine) - 100 (hot plate)</h2>
+<p>25 ephedrine<br>25 carbon<br>25 iodine<br>25 phosphorus<br>this does do poison damage to you so mix it with 3 dylo for every 4 meth you have (so if you make 100u meth add 75u dylo or do just 50/50 if you're lazy)</p>
+<button class="copy" onclick="copyText('mef')"><img id="meff" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="lsd" style="background-color:#77b58e;color:white">LSD aka Mindbreaker Toxin</button>
+<div class="content">
+<h2 style="color:white;">mindbreaker toxin - 90 (in order then put on hot plate)</h2>
+<p style="color:white;">10 potassium<br>10 nitrogen<br>40 silicon<br>30 hydrogen</p>
+<button class="copy" onclick="copyText('lsd')"><img id="lsdd" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="drug" style="background-color:#63806e;color:white">Space Drugs!!!</button>
+<div class="content">
+<h2 style="color:white;">space mirage - 90</h2>
+<p style="color:white;">30 sugar<br>30 lithium<br>30 mercury</p>
+<button class="copy" onclick="copyText('drug')"><img id="drugg" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="lub" style="background-color:#77b58e;">Space Lube</button>
+<div class="content">
+<h2 style="color:white;">fersilicate - 20 (hot plate, put into chemmaster)</h2>
+<p style="color:white;">10 silicon <br>10 iron</p>
+<h2 style="color:white;">space lube - 100</h2>
+<p style="color:white;">20 ferscilicate <br>20 oxygen<br>20 water</p>
+<button class="copy" onclick="copyText('lub')"><img id="lubb" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="cog" style="background-color:#b50ee8;">Cognizine - 5u makes creatures sentient</button>
+<div class="content">
+<h2 style="color:white;">oil - 75</h2>
+<p style="color:white;">25 hydrogen<br>25 carbon<br>25 welding fuel</p>
+<h2 style="color:white;">acetone - 60</h2>
+<p style="color:white;">30 oil <br>30 welding fuel<br>30 oxygen</p>
+<h2 style="color:white;">siderlac - 100, realistically just make as much as you need since both ingredients come from botany anyways</h2>
+<p style="color:white;">50 aloe <br>50 stellibinin (galaxy thistle)</p>
+<h2 style="color:white;">cognizine - 90</h2>
+<p style="color:white;">30 acetone<br>30 siderlac<br>30 carpotoxin (from salvage or botany making koibeans)</p>
+<button class="copy" onclick="copyText('cog')"><img id="cogg" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<center><h1 style="color:white;">BAD BOYS (you will probably get in trouble if caught with these)</h1></center>
+<button class="collapsible" id="lsd" style="background-color:#AAAAAA;">Pax - disables harm mode</button>
+<div class="content">
+<h2 style="color:white;">mindbreaker toxin - 90 (in order then put on hot plate)</h2>
+<p style="color:white;">10 potassium<br>10 nitrogen<br>40 silicon<br>30 hydrogen</p>
+<h2 style="color:white;">synaptizine - 90</h2>
+<p style="color:white;">30 lithium<br>30 sugar<br>30 water</p>
+<h2 style="color:white;">pax - 90 (not inherently evil but suspicious)</h2>
+<p style="color:white;">30 mindbreaker toxin<br>30 synaptizine<br>30 water</p>
+<button class="copy" onclick="copyText('pax')"><img id="paxx" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="heart" style="background-color:#5f959c;color:white">Heartbreaker Toxin - harsh asphyxiation damage (you need to have a very good reason for this one)</button>
+<div class="content">
+<h2 style="color:white;">mindbreaker toxin - 90 (in order then put on hot plate)</h2>
+<p style="color:white;">10 potassium<br>10 nitrogen<br>40 silicon<br>30 hydrogen</p>
+<h2 style="color:white;">dexaplus - 90</h2>
+<h3 style="color:white;">dexalin - 30</h3>
+<p style="color:white;">20 oxygen <br>1 plasma (does not consume, remove in chemmaster)</p>
+<h2 style="color:white;">dexaplus - 90</h3>
+<p style="color:white;">30 dexalin<br>30 carbon<br>30 iron</p>
+<h2>heartbreaker toxin - 90</h2>
+<p>45 mindbreaker toxin<br>45 dexalin plus</p>
+<button class="copy" onclick="copyText('heart')"><img id="heartt" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="lex" style="background-color:#6b0007;color:white">Lexorin - very potent asphyxiation damage (EXTREMELY ILLEGAL)</button>
+<div class="content">
+<h2 style="color:white;">mindbreaker toxin - 90 (in order then put on hot plate, mix will be 30 silicon 30 hyrogen 30 dylovene before heating)</h2>
+<p style="color:white;">10 potassium<br>10 nitrogen<br>40 silicon<br>30 hydrogen</p>
+<h2 style="color:white;">dexaplus - 90</h2>
+<h3 style="color:white;">dexalin - 30</h3>
+<p style="color:white;">20 oxygen <br>1 plasma (does not consume, remove in chemmaster)</p>
+<h2 style="color:white;">dexaplus - 90</h2>
+<p style="color:white;">30 dexalin<br>30 carbon<br>30 iron</p>
+<h2>heartbreaker toxin - 90</h2>
+<p>45 mindbreaker toxin<br>45 dexalin plus</p>
+<h2>lexorin - 60 </h2>
+<p>30 vestine (only from syndicate synthesis kit)<br>30 heartbreaker toxin<br>30 plasma (CONSUMES THE PLASMA)</p>
+<button class="copy" onclick="copyText('lex')"><img id="lexx" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="noc" style="background-color:#128e80;">Nocturine - sleep with at least 8u present (EXTREMELY ILLEGAL)</button>
+<div class="content">
+<h2 style="color:white;">impedrezene - 30</h2>
+<p style="color:white;">10 oxygen<br>10 mercury<br>10 water</p>
+<h2 style="color:white;">nocturine - 15 (around 15 seconds of sleep or so)</h2>
+<p style="color:white;">15 vestine (only from syndicate synthesis kit)<br>30 impedrezene</p>
+<button class="copy" onclick="copyText('noc')"><img id="nocc" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<button class="collapsible" id="hyp" style="background-color:#9A040E;">Hyperzine - ultrameth that can also heal at over 70 total damage (EXTREMELY ILLEGAL)</button>
+<div class="content">
+<h2 style="color:white;">oil - 75</h2>
+<p style="color:white;">25 hydrogen<br>25 carbon<br>25 welding fuel</p>
+<h2 style="color:white;">diethlyamine - 80 </h2>
+<p style="color:white;">30 hydrogen<br>10 nitrogen<br>40 ethanol</p>
+<h2 style="color:white;">ephedrine - 100</h2>
+<p style="color:white;">25 hydrogen<br>25 sugar<br>25 diethlyamine<br>25 oil</p>
+<h2 style="color:white;">hyperzine - 30 (hot plate)</h2>
+<p style="color:white;">15 ephedrine<br>15 vestine<br>30 oxygen</p>
+<button class="copy" onclick="copyText('hyp')"><img id="hypp" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+
+//more syndicate narcotic shit
+
+<center><h1 style="color:white;">NEED HERBS FROM BOTANY</h1></center>
+<button class="collapsible" id="sid" style="background-color:#f7e0be;color:black">Siderlac - caustic no OD (5u = 50 caustic)</button>
+<div class="content">
+<h2 style="color:white;">siderlac - however much you can get, its 1 of each equals 2, much better than sigynate</h2>
+<p style="color:white;">1 aloe <br>1 stellibinin (galaxy thistle)</p>
+<button class="copy" onclick="copyText('sid')"><img id="sidd" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<center><h1 style="color:white;">THE ZOMBIE CURE</h1></center>
+<button class="collapsible" id="amb" style="background-color:powderblue;color:black">Ambuzol - 10u to cure zombie bite</button>
+<div class="content">
+<h2 style="color:white;">dylovene - 30</h2>
+<p style="color:white;">10 potassium<br>10 silicon<br>10 nitrogen</p>
+<h2 style="color:white;">ammonia - 20</h2>
+<p style="color:white;">15 hydrogen<br>5 nitrogen</p>
+<h2 style="color:white;">ambuzol - 80</h2>
+<p style="color:white;">20 dylovene <br>20 ammonia<br>40 zombie blood<br>to make ambuzol plus just add equal parts omnizine to the ambuzol, 5u makes patient permanently immune to zombie virus</p>
+<button class="copy" onclick="copyText('amb')"><img id="ambb" src="hand_labeler.png"></button><br>Copy Label
+</div>
+
+<script>
+
+	const activeBtns = document.querySelectorAll('.collapsible.active')
+
+	if (activeBtns.length) {
+		activeBtns.forEach(btn => {
+		const content = btn.nextElementSibling
+		content.style.maxHeight = content.scrollHeight + 'px'
+	  })
+	}
+
+	var coll = document.getElementsByClassName("collapsible");
+	
+	var i;
+	for (i = 0; i < coll.length; i++) {
+
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+			content.style.maxHeight = null;
+		} else {
+			content.style.maxHeight = content.scrollHeight + "px";
+		}
+	});
+	}
+
+function copyText(type){
+  var text = document.getElementById(type).innerHTML;
+  navigator.clipboard.writeText(text);
+  var imgtext = type+type.slice(-1);
+  var img = document.getElementById(imgtext);
+  img.src="hand_labelercheck.png";
+  setTimeout(function(){img.src="hand_labeler.png";}, 3000);
+  return false;
+}
+
+
+</script>
+
+</html>
